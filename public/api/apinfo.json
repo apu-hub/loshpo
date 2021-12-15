@@ -1,0 +1,51 @@
+[
+    {
+        "url": "/api/scanDirectory",
+        "method": "get/post",
+        "payload": [
+            "optional",
+            {
+                "newDirectory": "Directory Name"
+            }
+        ],
+        "response": {
+            "code": 200,
+            "message": "Scan Directory Successfully",
+            "data": {
+                "currentPath": "C:\\Users\\User\\Desktop/config",
+                "scanData": [
+                    {
+                        "dirname": "C:\\Users\\User\\Desktop\\Nodejs\\loshpo\\public\\api",
+                        "basename": "api",
+                        "filename": "api",
+                        "extension": "folder"
+                    },
+                    {
+                        "dirname": "C:\\Users\\User\\Desktop\\Nodejs\\loshpo\\public\\htaccess",
+                        "basename": "htaccess",
+                        "filename": "htaccess"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "url": "/api/upOneLevel",
+        "method": "get/post",
+        "payload": "NA",
+        "response": [
+            {
+                "dirname": "C:\\Users\\User\\Desktop\\Nodejs\\loshpo\\public\\.htaccess",
+                "basename": ".htaccess",
+                "extension": "htaccess",
+                "filename": ""
+            },
+            {
+                "dirname": "C:\\Users\\User\\Desktop\\Nodejs\\loshpo\\public\\a.b.c.d",
+                "basename": "a.b.c.d",
+                "extension": "d",
+                "filename": "a.b.c"
+            }
+        ]
+    }
+]

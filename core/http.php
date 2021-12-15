@@ -24,6 +24,7 @@ class HttpPHP
         $data = json_decode(file_get_contents('php://input'), true);
         // Add a senitizer
         if ($data != null) $this->body = $data;
+        return $this->body;
     }
     function fetch_params()
     {

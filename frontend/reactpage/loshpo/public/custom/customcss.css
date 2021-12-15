@@ -1,0 +1,12 @@
+html,body{
+    height: 100%;
+    font-style: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.gradient{
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+.icon{
+    width: 35px;
+}
